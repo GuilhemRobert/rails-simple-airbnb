@@ -3,12 +3,27 @@
   <head>
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <a href="/flats" class="navbar-wagon-item navbar-wagon-link"><i class="fas fa-home"></i>Simple Airbnb</a>
+      <form action="http://localhost:3000/flats/query" method="get">
+        <ul class="list-inline">
+          <li><input type="text" name="query"></li>
+
+          <li><input type="submit" class="btn btn-blue" value="Search"></li>
+        </ul>
+      </form>
+      <a class="btn-blue" href="/flats/new">Add Flat</a>
+    </div>
+    <div class="wrapper-white">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="container-custom">
+    <h2> <%= @flat.name %></h2>
+    <br>
+    <ul class="list-inline">
+      <li>
+            <i class="fas fa-users"></i>
+            <%= @flat.number_of_guests %>
+          </li>
+          <li>
+            <i class="fas fa-euro-sign"></i>
+            <%= @flat.price_per_night %>
+          </li>
+    </ul>
+    <p>Address : <%= @flat.address %></p>
+    <p> <%= @flat.description %></p>
+    <%= link_to "Go back home", flats_path %>
+  </div>
+</div>
+

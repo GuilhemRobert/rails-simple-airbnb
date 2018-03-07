@@ -1,0 +1,40 @@
+.wrapper-white {
+  background-color: white;
+}
+
+.wrapper {
+  padding: 50px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.card {
+  flex: 0 0 30%;
+  height: 300px;
+  background-color: $light-gray;
+  margin-bottom: 10px;
+  padding: 40px;
+} a:hover {
+  text-decoration: none;
+}
+
+.flat-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+ a{
+  color: black;
+  }
+}
+
+.address {
+  margin-bottom: 10px;
+  font-size: 8 !important;
+}
+
